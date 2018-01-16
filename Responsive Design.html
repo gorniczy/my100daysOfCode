@@ -1,20 +1,34 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/ rel="stylesheet" type="text/css">
+        <style>
+        /** {
+            outline: 1px solid red;
+          }*/
+        h1 {
+          font-family: Lobster;
+          color: red;
+          margin-bottom: 35px;
+        }
+        </style>
     </head>
     <body>
-        <h1>Some bootstrapping</h1>
-        <div class="row">
-            <div class="col-md-1">
-                <button class="btn btn-block btn-primary">Cześć</button>
+      <div class="container-fluid">
+        <h1 class="text-center">Some bootstrapping</h1>
+        <div class="row text-center">
+            <div class="col-xs-4">
+                <button class="btn btn-primary"><i class="fa fa-trash">Cześć</i></button>
             </div>
-            <div class="col-md-1">
-                <button class="btn btn-block btn-info">Buźka</button>
+            <div class="col-xs-4">
+                <button class="btn btn-info"><i class="fa fa-thumbs-up">Buźka</i></button>
             </div>
-            <div class="col-md-1">
-                <button class="btn btn-block btn-danger">Turlaj dropsa</button>
+            <div class="col-xs-4">
+                <button class="btn btn-danger"><i class="fa fa-info-circle">Turlaj dropsa</i></button>
             </div>
         </div>
+      </div>
     </body>
 </html>
