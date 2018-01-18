@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/ rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/animate.css">
+        <script src="jquery-3.2.1.min.js">
+        $(document).ready(function() {
+          $("button").addClass("animated bounce");
+        });
+        </script>
+        <style>
+        /** {
+            outline: 1px solid red;
+          }*/
+        h1 {
+          font-family: Lobster;
+          color: red;
+          margin-bottom: 35px;
+        }
+        </style>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <h1 class="text-center">Some bootstrapping</h1>
+        <div class="row text-center">
+            <div class="col-xs-4">
+                <button class="btn btn-primary target" id="target1"><i class="fa fa-trash"></i>Cześć</button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-info target" id="target2"><i class="fa fa-thumbs-up"></i>Buźka</button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-danger target" id="target3"><i class="fa fa-info-circle"></i>Turlaj dropsa</button>
+            </div>
+        </div>
+      </div>
+    </body>
+</html>
