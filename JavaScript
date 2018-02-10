@@ -1,0 +1,29 @@
+function myFunct(parameter1, parameter2) {
+  console.log(parameter1 * parameter2);
+}
+
+myFunct(3, 89);
+
+//
+
+var TrueStory = "Smile, beautiful! ";
+TrueStory += "That's such a lovely day!";
+TrueStory.length;
+
+//
+
+var TrueStory = "Smile, beautiful! ";
+TrueStory += "That's such a lovely day!";
+TrueStory[0];
+
+//
+
+console.log("My donut taste like cigarettes.");
+
+//
+
+function someOtherF(a, b) {
+  return(a + b) - 7;
+}
+
+someOtherF
