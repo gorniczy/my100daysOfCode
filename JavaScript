@@ -26,4 +26,4 @@ function someOtherF(a, b) {
   return(a + b) - 7;
 }
 
-someOtherF
+someOtherF(45, 9);
