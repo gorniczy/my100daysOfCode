@@ -18,7 +18,7 @@ TrueStory[0];
 
 //
 
-console.log("My donut taste like cigarettes.");
+console.log("My donut tastes like cigarettes.");
 
 //
 
@@ -58,3 +58,23 @@ function mySwitchFun(num) {
 }
 
 mySwitchFun(3);
+
+function otherF(val) {
+  var answer;
+  switch(val) {
+    case "do":
+    answer =  "don't";
+    break;
+    case "jump":
+    answer = "fly";
+    break;
+    case "look":
+    answer = "sniff";
+    break;
+    default:
+    answer = "WTF";
+  }
+  return answer;
+}
+
+otherF("jump");
