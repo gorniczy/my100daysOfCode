@@ -30,14 +30,14 @@ someOtherF(45, 9);
 
 //
 
-function myIfFunction(condition) {
+function jLo(condition) {
   if (condition) {
     return "Taco taco";
   }
   return "Burrito burrito";
 }
 
-myIfFunction(true);
+jLo(true);
 
 // switch statement (selecting from many options)
 
