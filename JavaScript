@@ -81,7 +81,6 @@ otherF("jump");
 
 // Counting cards
 
-
 var count = 0;
 
 function cc(card) {
@@ -112,3 +111,20 @@ function cc(card) {
 }
 
 cc(4); cc("J"); cc("A"); cc(6);
+
+
+// lookup
+
+function whatsInIt(val) {
+  var result;
+  var here = {
+    "cow": "mu mu",
+    "cat": "miau miau",
+    "lover": "muah muah",
+    "bunny": "khrum khrum"
+  };
+  result = here[val];
+  return result;
+};
+
+whatsInIt("cat");
