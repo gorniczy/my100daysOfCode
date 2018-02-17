@@ -128,3 +128,49 @@ function whatsInIt(val) {
 };
 
 whatsInIt("cat");
+
+// Testing onject for properties
+
+var me = {
+  "looks": "good",
+  "smells": "nice",
+  "tastes": "sweet"
+}
+
+function testMe(props) {
+
+  if(me.hasOwnProperty(props)) {
+    return me[props];
+  }
+
+  return "Are you kidding?";
+
+}
+
+testMe("looks");
+
+// nesting loops
+
+function myLoop(arr) {
+  var result = 2;
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr[i].length; j++) {
+      result *= arr[i][j];
+    }
+  }
+  return result;
+}
+
+myLoop([[2, 3],[8, 6],[4]]);
+
+// while loops
+
+var myArray = [];
+var i = 0;
+while(i < 5) {
+  myArray.push(i);
+  i++;
+}
+console.log(myArray);
+
+//
