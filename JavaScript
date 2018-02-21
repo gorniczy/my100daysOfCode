@@ -173,7 +173,7 @@ while(i < 5) {
 }
 console.log(myArray);
 
-// Profile lookup I figued out all by myself
+// Profile lookup I figued out all by myself :)
 
 var contacts = [
     {
