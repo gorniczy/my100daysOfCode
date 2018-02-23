@@ -254,7 +254,7 @@ return val * 2;
 });
 console.log(newVar);
 
-// factoralize
+// factorialize
 
 function factorialize(num) {
   var newArr = [];
@@ -268,3 +268,19 @@ function factorialize(num) {
 }
 
 factorialize(2);
+
+// palindrome
+
+function palindrome(str) {
+  var lc = str.toLowerCase();
+  var rem = lc.replace(/\W|_/g, "");
+  var newArray = rem.split("");
+  var rev = newArray.reverse();
+  var join = rev.join("");
+  if (rem === join) {
+    return true;
+  }
+  return false;
+}
+
+palindrome("E_ye");
