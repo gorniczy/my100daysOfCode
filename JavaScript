@@ -284,3 +284,20 @@ function palindrome(str) {
 }
 
 palindrome("E_ye");
+
+// longest world
+
+function wordLength(str) {
+  var spl = str.split(" ");
+  var arr = [];
+  for (var i = 0; i < spl.length; i++) {
+    var length = spl[i].length;
+    arr.push(length);
+  }
+  arr.sort(function(a, b) {
+    return a - b;
+  })
+  return arr[arr.length - 1];
+}
+
+wordLength("Go home hippies, go!");
