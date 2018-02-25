@@ -300,4 +300,4 @@ function wordLength(str) {
   return arr[arr.length - 1];
 }
 
-wordLength("Go home hippies, go!");
+wordLength("Go home hippies go!");
