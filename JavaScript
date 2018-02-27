@@ -302,4 +302,18 @@ function wordLength(str) {
 
 wordLength("Go home hippies go!");
 
-// 
+// title case a sentence
+
+function titleCase(str) {
+  var lower = str.toLowerCase();
+  var arr = lower.split(" ");
+  var arr2 = [];
+  var arr3 = [];
+  var arr4 = [];
+  for (var i = 0; i < arr.length; i++) {
+
+  }
+  return arr2;
+}
+
+titleCase("I'm a little tea pot");
