@@ -305,15 +305,14 @@ wordLength("Go home hippies go!");
 // title case a sentence
 
 function titleCase(str) {
-  var arr = str.split(" ");
-  var arr2 = [];
-  var arr3 = [];
-  var arr4 = [];
-  for (var i = 0; i < arr.length; i++) {
-   var word = arr[i][0].toUpperCase() + arr[i].substring(arr[i][0]).toLowerCase();
-   arr2.push(word);
+  var string = str.split(" ");
+  var arr = [];
+  for (var i = 0; i < string.length; i++) {
+   var word = string[i][0].toUpperCase() + string[i].substring(1).toLowerCase();
+   arr.push(word);
   }
-  return arr2;
+  var result = arr.join(" ");
+  return result;
 }
 
-titleCase("I'm a little tea pot");
+titleCase("wHen TO feED A dOG");
