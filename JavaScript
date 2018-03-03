@@ -371,3 +371,25 @@ function truncateString(str, num) {
 }
 
 truncateString("Absolutely Longer", 2);
+
+// chunky monkey
+
+function chunkArrayInGroups(arr, size) {
+  var myArr = [];
+  var i = 0;
+  if (arr.length/size <= size) {
+    while (i < arr.length/size) {
+    myArr.push(arr.slice(size * i, size * i + size));
+    i++;
+   }
+  }
+   else {
+     while (i < arr.length/size) {
+    myArr.push(arr.slice(size * i, size * i + size));
+    i++;
+      }
+    }
+    return myArr;
+  }
+
+chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 3);
