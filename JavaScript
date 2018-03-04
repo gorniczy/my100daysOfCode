@@ -393,3 +393,37 @@ function chunkArrayInGroups(arr, size) {
   }
 
 chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 3);
+
+// slasher flick
+
+function slasher(arr, howMany) {
+  var newArr = [];
+  for (i = howMany; i < arr.length; i++) {
+    newArr.push(arr[i]);
+  }
+  return newArr;
+}
+
+slasher([1, 2, 3], 2);
+
+// mutations
+
+function mutation(arr) {
+  var newArr = [];
+  for (i = 0; i < arr.length; i++) {
+    newArr.push(arr[i].toLowerCase());
+  }
+  var newNewArr = [];
+  newNewArr.push(newArr[0]);
+  newNewArr.push(newArr[1].split(""));
+  var result = [];
+  for (i = 0; i < newNewArr[1].length; i++) {
+    result.push(newNewArr[0].indexOf(newNewArr[1][i]));
+  }
+    if (result.includes(-1) == false) {
+      return true;
+    }
+    return false;
+}
+
+mutation(["Mary", "mary"]);
