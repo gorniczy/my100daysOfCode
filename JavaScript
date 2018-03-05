@@ -436,3 +436,17 @@ function bouncer(arr) {
 }
 
 bouncer([false, null, 0, NaN, undefined, ""]);
+
+// seek and destroy
+
+function destroyer(arr) {
+  var target = arguments[0];
+  var gun = [];
+  for (i=1; i < arguments.length; i++) {
+    gun.push(arguments[i]);
+  }
+  var result = target.filter(function(val) {return val !== gun[0] && val !== gun[1] && val !== gun[2];});
+  return result;
+}
+
+destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
