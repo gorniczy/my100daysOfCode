@@ -442,7 +442,7 @@ bouncer([false, null, 0, NaN, undefined, ""]);
 function destroyer(arr) {
   var target = arguments[0];
   var gun = [];
-  for (i=1; i < arguments.length; i++) {
+  for (i = 1; i < arguments.length; i++) {
     gun.push(arguments[i]);
   }
   var result = target.filter(function(val) {return val !== gun[0] && val !== gun[1] && val !== gun[2];});
@@ -451,4 +451,4 @@ function destroyer(arr) {
 
 destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
 
-//
+// where do I belong
