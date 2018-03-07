@@ -452,3 +452,16 @@ function destroyer(arr) {
 destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
 
 // where do I belong
+
+function getIndexToIns(arr, num) {
+  var newArr = arr.sort(function(a, b) {return a - b;});
+  var here = [];
+  for (i = 0; i < newArr.length; i++) {
+  if (newArr[i] < num) {
+  here.push(newArr[i]);
+}
+  }
+  return here.length;
+}
+
+getIndexToIns([40, 60], 50);
