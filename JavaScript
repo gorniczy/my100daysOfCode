@@ -467,3 +467,50 @@ function getIndexToIns(arr, num) {
 getIndexToIns([40, 60], 50);
 
 // Ceasers Cipher
+
+
+function rot13(str) { // LBH QVQ VG!
+  var arr = str.split("");
+  var result = [];
+  var cipher = {
+    "A": "N",
+    "B": "O",
+    "C": "P",
+    "D": "Q",
+    "E": "R",
+    "F": "S",
+    "G": "T",
+    "H": "U",
+    "I": "V",
+    "J": "W",
+    "K": "X",
+    "L": "Y",
+    "M": "Z",
+    "N": "A",
+    "O": "B",
+    "P": "C",
+    "Q": "D",
+    "R": "E",
+    "S": "F",
+    "T": "G",
+    "U": "H",
+    "V": "I",
+    "W": "J",
+    "X": "K",
+    "Y": "L",
+    "Z": "M",
+  };
+for (i = 0; i < arr.length; i++) {
+var lookup = arr[i];
+  if (cipher[lookup]) {
+result.push(cipher[lookup]);
+  }
+  else {
+    result.push(arr[i]);
+  }
+}
+  return result.join("");
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
