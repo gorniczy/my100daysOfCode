@@ -468,7 +468,6 @@ getIndexToIns([40, 60], 50);
 
 // Ceasers Cipher
 
-
 function rot13(str) { // LBH QVQ VG!
   var arr = str.split("");
   var result = [];
