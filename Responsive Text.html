@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="Responsive Text.css" type="text/css" rel="stylesheet">
     <script>
-      document.body.setScaledFont = function(f) {
-        var s = this.offsetWidth, fs = s * f;
-        this.style.fontSize = fs + '%';
-        return this
+    window.onload = function() {
+        document.getElementById("me").setScaledFont = function (f){
+          var s = this.offsetWidth,
+          fs = s * f;
+          this.style.fontSize = fs + '%';
+          return this
         };
-        document.body.setScaledFont(0.40);
-        window.onresize = function() {
-        document.body.setScaledFont(0.40);
-      };
+
+        document.getElementById("me").setScaledFont(0.35);
+        window.onresize = function () {
+          document.getElementById("me").setScaledFont(0.35);
+        };
+    }
     </script>
+
   </head>
   <body>
-    <div style="font-size: 2em">Do I work properly?</div>
+    <div id="me">Do I work properly?</div>
   </body>
 </html>
