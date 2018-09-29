@@ -8,7 +8,7 @@ myFunct(3, 89);
 
 var trueStory = "Smile, beautiful! ";
 trueStory += "That's such a lovely day!";
-TrueStory.length;
+trueStory.length;
 
 //
 
@@ -285,7 +285,7 @@ function palindrome(str) {
 
 palindrome("E_ye");
 
-// longest world
+// longest word
 
 function wordLength(str) {
   var spl = str.split(" ");
@@ -513,3 +513,15 @@ result.push(cipher[lookup]);
 
 // Change the inputs below to test
 rot13("SERR PBQR PNZC");
+
+// Function without return - does the work but return undefined
+
+var digit = 0;
+function bum() {
+  digit = digit + 9000;
+}
+
+var result = bum();
+
+console.log(result);
+console.log(digit);
