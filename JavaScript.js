@@ -525,3 +525,5 @@ var result = bum();
 
 console.log(result);
 console.log(digit);
+
+//  Add New Properties to a JavaScript Object
