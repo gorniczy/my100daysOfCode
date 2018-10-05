@@ -601,9 +601,44 @@ const squareList = (arr) => {
   "use strict";
 
   const integers = arr.filter((num) => Number.isInteger(num) && num > 0);
+  const squaredIntegers = integers.map(x => Math.pow(x, 2));
 
   return squaredIntegers;
 };
 
 const squaredIntegers = squareList(realNumberArray);
 console.log(squaredIntegers);
+
+// Use Destructuring Assignment to Assign Variables from Objects
+
+const AVG_TEMPERATURES = {
+  today: 77.5,
+  tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperatures) {
+  "use strict";
+
+  const {tomorrow : tempOfTomorrow} = avgTemperatures;
+
+  return tempOfTomorrow;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+// Use class Syntax to Define a Constructor Function
+
+function makeClass() {
+  "use strict";
+
+class Vegetable {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+  return Vegetable;
+}
+const Vegetable = makeClass();
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // => should be 'carrot'
