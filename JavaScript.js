@@ -594,7 +594,7 @@ do {
   i++;
 } while (i < 10);
 
-// ES6 intro below
+// introduction to ES6
 
 // Write Higher Order Arrow Functions
 
@@ -644,3 +644,17 @@ class Vegetable {
 const Vegetable = makeClass();
 const carrot = new Vegetable('carrot');
 console.log(carrot.name); // => should be 'carrot'
+
+// Act on a number of ppl or things
+
+let list = ["me", "you", "Pope", "Rambo", "Faust"];
+let act = "fuck ";
+function interC(arr, str) {
+  const result = [];
+  for(let x = 0; x < arr.length; x++) {
+    result.push(str + arr[x]);
+  }
+  return result;
+};
+
+interC(list, act);
