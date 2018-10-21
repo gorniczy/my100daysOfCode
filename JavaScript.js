@@ -657,4 +657,11 @@ function interC(arr, str) {
   return result;
 };
 
-interC(list, act);
+interC(list, act).join(" * ");
+
+// Use map method to find
+
+let listOfAnimals = ["dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "cat", "dog", "dog", "dog", "dog", "dog", "cat", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "cat", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "cat"];
+listOfAnimals.map(function(x) {
+  return x === "cat";
+});
