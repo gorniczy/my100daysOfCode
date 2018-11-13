@@ -659,9 +659,28 @@ function interC(arr, str) {
 
 interC(list, act).join(" * ");
 
-// Use map method to find
+// Use filter method to find kitties
 
 let listOfAnimals = ["dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "cat", "dog", "dog", "dog", "dog", "dog", "cat", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "cat", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "dog", "cat"];
-listOfAnimals.map(function(x) {
+listOfAnimals.filter(function(x) {
   return x === "cat";
 });
+
+// Setting font-size on the basis of main container's appWidth
+
+function setFontSize() {
+  const content = document.getElementById("content");
+  const contentWidth = content.offsetWidth;
+  const allFontSizes = {
+    80 : contentWidth * 0.0585,
+    36 : contentWidth * 0.0263,
+    24 : contentWidth * 0.0175,
+    22 : contentWidth * 0.0161
+  }
+  document.getElementsByClassName("fontSize80").style.fontSize = allFontSizes[80] + "px";
+  document.getElementsByClassName("fontSize36").style.fontSize = allFontSizes[36] + "px";
+  document.getElementsByClassName("fontSize36").style.fontSize = allFontSizes[24] + "px";
+  document.getElementsByClassName("fontSize36").style.fontSize = allFontSizes[22] + "px";
+}
+window.addEventListener("load", setFontSize);
+window.addEventListener("resize", setFontSize);
